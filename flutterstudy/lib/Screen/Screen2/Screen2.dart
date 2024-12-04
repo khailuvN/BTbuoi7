@@ -30,7 +30,7 @@ class Screen2 extends StatelessWidget {
                 const Times(),
                 const Priority(title: 'Priority'),
                 const createStask(),
-                Button(onTap: () {}, title: 'Create Task'),
+                Button(onTap: () {}, title:'Create Task'),
               ],
             ),
           ),
