@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterstudy/Screen/Screen1/model/color_model.dart';
 import '../../Screen1/model/colors.dart';
@@ -39,7 +40,6 @@ class _PriorityState extends State<Priority> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: priorityList.map((priorityButton) {
-                  bool isSelected = selectedPriority == priorityButton.label;
                   ColorModel? colorModel = colorList.firstWhere(
                         (color) => color.priority == priorityButton.priority,
                     orElse: () => ColorModel(color: Colors.grey, priority: priorityButton.priority),
@@ -60,7 +60,9 @@ class _PriorityState extends State<Priority> {
                         setState(() {
                           selectedPriority = priorityButton.label;
                         });
-                        print('Selected Priority: ${priorityButton.label}');
+                        if (kDebugMode) {
+                          print('Selected Priority: ${priorityButton.label}');
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.hex181818,

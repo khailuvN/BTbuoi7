@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 
 import '../../Screen1/model/color_model.dart';
 
@@ -38,15 +36,6 @@ class _WidgetTimesState extends State<WidgetTimes> {
     });
   }
 
-=======
-
-import '../../Screen1/model/color_model.dart';
-
-
-class WidgetTimes extends StatelessWidget {
-  const WidgetTimes({super.key});
-
->>>>>>> 0118c54 (khaihandsome)
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -75,7 +64,6 @@ class WidgetTimes extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 16.0),
-<<<<<<< HEAD
           SizedBox(
             height: 100,
             child: ListView.builder(
@@ -99,19 +87,6 @@ class WidgetTimes extends StatelessWidget {
                 );
               },
             ),
-=======
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _buildDayColumn('Mon', '04', false),
-              _buildDayColumn('Tue', '05', false),
-              _buildDayColumn('Wed', '06', false),
-              _buildDayColumn('Thu', '07', true),
-              _buildDayColumn('Fri', '08', false),
-              _buildDayColumn('Sat', '09', false),
-              _buildDayColumn('Sun', '10', false),
-            ],
->>>>>>> 0118c54 (khaihandsome)
           ),
         ],
       ),
@@ -119,7 +94,6 @@ class WidgetTimes extends StatelessWidget {
   }
 
   Widget _buildDayColumn(String day, String date, bool isSelected) {
-<<<<<<< HEAD
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Column(
@@ -128,23 +102,6 @@ class WidgetTimes extends StatelessWidget {
             day,
             style: TextStyle(
               color: isSelected ? AppColors.hexBA83DE : Colors.white,
-=======
-    return Column(
-      children: [
-        Text(
-          day,
-          style: const TextStyle(color: Colors.white, fontSize: 18),
-        ),
-        const SizedBox(height: 8.0),
-        Container(
-          padding: const EdgeInsets.all(8.0),
-          decoration: const BoxDecoration(
-          ),
-          child: Text(
-            date,
-            style: const TextStyle(
-              color: Colors.white,
->>>>>>> 0118c54 (khaihandsome)
               fontSize: 18,
             ),
           ),

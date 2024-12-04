@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterstudy/Screen/Screen1/widgets/task_item.dart';
 import '../model/color_model.dart';
-import '../model/task_model.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -39,7 +37,7 @@ class Header extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
             ],
           ),
         ),

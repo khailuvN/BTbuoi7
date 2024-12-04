@@ -9,7 +9,7 @@ import 'model/color_model.dart';
 import 'model/task_model.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
               right: 20,
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Screen2()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Screen2()));
                 },
                 child: Container(
                   width: 71,
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withOpacity(0.5),
-                        offset: Offset(3, 3),
+                        offset: const Offset(3, 3),
                         blurRadius: 5,
                         spreadRadius: 1,
                       ),
