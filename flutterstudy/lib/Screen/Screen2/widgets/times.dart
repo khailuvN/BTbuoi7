@@ -11,7 +11,7 @@ class Times extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
+          SizedBox(
             height: 77,
             width: 180,
             child: Column(
@@ -48,7 +48,7 @@ class Times extends StatelessWidget {
             ),
           ),
 
-          Container(
+          SizedBox(
             height: 77,
             width: 180,
             child: Column(
